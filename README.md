@@ -1,10 +1,10 @@
 # DCLM-Project
 This project was carried out for Deeper Christian Life Ministry
 <p>In developing this application, I used</p>
-Exoplayer library for the player
-Android MVVM Architecture
-Data Binding
-Repository Pattern
+<p><b>Exoplayer library for the player</b></p>
+<p><b>Android MVVM Architecture</b></p>
+<p><b>Data Binding</b></p>
+<p><b>Repository Pattern</b></p>
 
 You can use the code, but you ned to add the apis, and streaming links before you can use.
 
