@@ -10,6 +10,7 @@ You can use the code, but you ned to add the apis, and streaming links before yo
 
 ![Screenshot_1592118257](https://user-images.githubusercontent.com/50696559/85920357-e5d1d680-b86a-11ea-985d-108b2f658dab.png)
 ![Screenshot_1592118271](https://user-images.githubusercontent.com/50696559/85920358-e66a6d00-b86a-11ea-9a48-e9c6096ebf35.png)
+![Screenshot_1592850320](https://user-images.githubusercontent.com/50696559/85920391-30535300-b86b-11ea-8be3-6f2369ea50b9.png)
 
 
 You can find the work on app store https://play.google.com/store/apps/details?id=org.dclm.live
