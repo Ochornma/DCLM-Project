@@ -1,6 +1,6 @@
 # DCLM-Project
 This project was carried out for Deeper Christian Life Ministry
-In developing this application, I used 
+<p>In developing this application, I used</p>
 Exoplayer library for the player
 Android MVVM Architecture
 Data Binding
