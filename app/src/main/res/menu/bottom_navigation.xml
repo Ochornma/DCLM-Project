@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_radio"
+        android:title="@string/radio" />
+
+    <item
+        android:id="@+id/videoFragment"
+        android:icon="@drawable/ic_video"
+        android:title="@string/video" />
+   <!-- <item
+        android:id="@+id/messageFragment"
+        android:icon="@drawable/ic_recent"
+        android:title="@string/recent"/>-->
+
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/chat" />
+
+    <item
+        android:id="@+id/sermonFragment"
+        android:icon="@drawable/ic_event_note_black_24dp"
+        android:title="@string/sermon" />
+
+    <item
+        android:id="@+id/doctrineFragment"
+        android:icon="@drawable/ic_book"
+        android:title="@string/doctrine"/>
+</menu>

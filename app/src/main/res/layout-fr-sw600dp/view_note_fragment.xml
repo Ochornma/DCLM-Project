@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:hint="@string/topic"
+                android:id="@+id/topic"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textColorHint="#CC000000"
+                android:textSize="28sp"
+                app:layout_anchorGravity="top|center"
+                android:importantForAutofill="no" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:ellipsize="end"
+                android:enabled="false"
+                android:fadingEdge="vertical"
+                android:layout_marginBottom="10dp"
+                android:focusable="false"
+                android:scrollbars="vertical"
+                android:textColor="#000"
+                android:textColorHint="#CC000000"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+</ScrollView>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="32dp"
+            android:background="#fff"
+            android:id="@+id/edit"
+            android:backgroundTint="#fff"
+            android:elevation="8dp"
+            android:src="@drawable/edit"
+            app:elevation="8dp"
+            app:layout_anchorGravity="bottom|right|end"
+            tools:targetApi="lollipop" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

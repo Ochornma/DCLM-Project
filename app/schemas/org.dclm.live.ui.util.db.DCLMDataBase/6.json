@@ -1,0 +1,118 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 6,
+    "identityHash": "a8ab2356d1f08c46a6b6efa876b3f4ce",
+    "entities": [
+      {
+        "tableName": "note_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `date` TEXT, `speaker` TEXT, `service` TEXT NOT NULL, `topic` TEXT, `description` TEXT, `point1` TEXT, `point1_description` TEXT, `point2` TEXT, `point2_description` TEXT, `point3` TEXT, `point3_description` TEXT, `point4` TEXT, `point4_description` TEXT, `decision` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "date",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "speaker",
+            "columnName": "speaker",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "service",
+            "columnName": "service",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "topic",
+            "columnName": "topic",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "point1",
+            "columnName": "point1",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "point1_description",
+            "columnName": "point1_description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "point2",
+            "columnName": "point2",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "point2_description",
+            "columnName": "point2_description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "point3",
+            "columnName": "point3",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "point3_description",
+            "columnName": "point3_description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "point4",
+            "columnName": "point4",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "point4_description",
+            "columnName": "point4_description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "decision",
+            "columnName": "decision",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a8ab2356d1f08c46a6b6efa876b3f4ce')"
+    ]
+  }
+}

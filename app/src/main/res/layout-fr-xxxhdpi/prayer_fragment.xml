@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/share_Tesatimony"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="@string/name"
+        android:layout_weight="1"
+        android:inputType="textPersonName"
+        android:id="@+id/name"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="@string/subject"
+        android:layout_weight="1"
+        android:inputType="text"
+        android:id="@+id/subject"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="@string/email"
+        android:layout_weight="1"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email"
+        android:importantForAutofill="no" />
+
+
+    <org.dclm.live.ui.sermon.MyEditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:hint="@string/take_your_burden_to_the_lord_in_prayer"
+        android:id="@+id/your_testimony"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/take_your_burden_to_the_lord_in_prayer"
+        android:id="@+id/submit_testimony"/>
+
+</LinearLayout>
+

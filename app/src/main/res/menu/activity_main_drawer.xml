@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/menu_home" />
+
+   <!-- <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/chat" />-->
+
+    <item
+        android:id="@+id/experienceFragment"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/experience" />
+    <item
+        android:id="@+id/connectFragment"
+        android:icon="@drawable/ic_connect"
+        android:title="@string/connect" />
+
+    <item
+        android:id="@+id/subscribeFragment"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search" />
+    <item
+        android:id="@+id/moneyFragment"
+        android:icon="@drawable/ic_money"
+        android:title="@string/give" />
+
+</menu>

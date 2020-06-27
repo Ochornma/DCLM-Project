@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DCLM Radio</string>
+    <string name="play_and_pause">démarrer et arrêter</string>
+    <string name="app_describe">Votre bien-être spirituel est notre préoccupation</string>
+    <string name="no_connection">Pas de connection</string>
+
+    <string name="listning">les auditeurs:</string>
+    <string name="no_speaker">Aucun locuteur détecté</string>
+</resources>

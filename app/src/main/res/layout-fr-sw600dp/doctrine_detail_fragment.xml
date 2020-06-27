@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="doctrine"
+            type="org.dclm.live.ui.doctrine.Doctrine" />
+    </data>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        tools:context=".ui.doctrine.DoctrineDetailFragment">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="4dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/open_bible_one"
+                android:contentDescription="@string/open_bible" />
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:text="@={doctrine.heading}"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:id="@+id/content"
+                android:text="@={doctrine.content}"
+                android:textStyle="italic"
+                android:layout_marginBottom="10dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@={doctrine.body}"
+                android:textSize="25sp"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

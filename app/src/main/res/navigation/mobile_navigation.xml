@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="org.dclm.live.ui.radio.RadioFragment"
+        android:label="@string/radio"
+        tools:layout="@layout/radio_fragment" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="org.dclm.live.ui.announce.AnnouncementFragment"
+        android:label="@string/chat"
+        tools:layout="@layout/announcement_fragment" />
+    <fragment
+        android:id="@+id/connectFragment"
+        android:name="org.dclm.live.ui.connect.ConnectFragment"
+        android:label="@string/connect"
+        tools:layout="@layout/connect_fragment" />
+    <fragment
+        android:id="@+id/doctrineFragment"
+        android:name="org.dclm.live.ui.doctrine.DoctrineFragment"
+        android:label="@string/doctrine"
+        tools:layout="@layout/doctrine_fragment">
+        <action
+            android:id="@+id/action_doctrineFragment_to_doctrineDetailFragment"
+            app:destination="@id/doctrineDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/experienceFragment"
+        android:name="org.dclm.live.ui.experience.ExperienceFragment"
+        android:label="@string/experience"
+        tools:layout="@layout/experience_fragment">
+        <action
+            android:id="@+id/action_experienceFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
+        <action
+            android:id="@+id/action_experienceFragment_to_prayerFragment"
+            app:destination="@id/prayerFragment" />
+        <action
+            android:id="@+id/action_experienceFragment_to_testimonyFragment"
+            app:destination="@id/testimonyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="org.dclm.live.ui.message.MessageFragment"
+        android:label="@string/recent"
+        tools:layout="@layout/message_fragment">
+        <action
+            android:id="@+id/action_messageFragment_to_blogDetailFragment"
+            app:destination="@id/blogDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subscribeFragment"
+        android:name="org.dclm.live.ui.subscribe.SearchFragment"
+        android:label="@string/search"
+        tools:layout="@layout/search_fragment" />
+    <fragment
+        android:id="@+id/sermonFragment"
+        android:name="org.dclm.live.ui.sermon.SermonFragment"
+        android:label="@string/sermon"
+        tools:layout="@layout/sermon_fragment" >
+        <action
+            android:id="@+id/action_sermonFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+        <action
+            android:id="@+id/action_sermonFragment_to_viewNoteFragment"
+            app:destination="@id/viewNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="org.dclm.live.ui.video.VideoFragment"
+        android:label="@string/video"
+        tools:layout="@layout/video_fragment" />
+    <fragment
+        android:id="@+id/doctrineDetailFragment"
+        android:name="org.dclm.live.ui.doctrine.DoctrineDetailFragment"
+        android:label="@string/doctrine"
+        tools:layout="@layout/doctrine_detail_fragment">
+        <argument
+            android:name="doctrine"
+            app:argType="org.dclm.live.ui.doctrine.Doctrine" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="org.dclm.live.ui.experience.help.HelpFragment"
+        android:label="@string/help"
+        tools:layout="@layout/help_fragment" />
+    <fragment
+        android:id="@+id/prayerFragment"
+        android:name="org.dclm.live.ui.experience.prayer.PrayerFragment"
+        android:label="@string/prayer"
+        tools:layout="@layout/prayer_fragment" />
+    <fragment
+        android:id="@+id/testimonyFragment"
+        android:name="org.dclm.live.ui.experience.testimony.TestimonyFragment"
+        android:label="@string/testimony"
+        tools:layout="@layout/testimony_fragment" />
+    <fragment
+        android:id="@+id/blogDetailFragment"
+        android:name="org.dclm.live.ui.message.BlogDetailFragment"
+        android:label="@string/recent"
+        tools:layout="@layout/blog_detail_fragment" >
+        <argument
+            android:name="blog"
+            app:argType="org.dclm.live.ui.message.Blog" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="org.dclm.live.ui.sermon.AddNoteFragment"
+        android:label="@string/sermon"
+        tools:layout="@layout/add_note_fragment">
+        <action
+            android:id="@+id/action_addNoteFragment_to_sermonFragment"
+            app:destination="@id/sermonFragment"
+            app:popUpTo="@id/sermonFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="note"
+            app:argType="org.dclm.live.ui.sermon.Note"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewNoteFragment"
+        android:name="org.dclm.live.ui.sermon.ViewNoteFragment"
+        android:label="@string/sermon"
+        tools:layout="@layout/view_note_fragment">
+        <action
+            android:id="@+id/action_viewNoteFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment"
+            app:popUpTo="@id/sermonFragment" />
+        <argument
+            android:name="note"
+            app:argType="org.dclm.live.ui.sermon.Note"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/moneyFragment"
+        android:name="org.dclm.live.ui.give.GiveFragment"
+        android:label="@string/give"
+        tools:layout="@layout/give_fragment" />
+</navigation>

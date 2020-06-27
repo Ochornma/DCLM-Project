@@ -1,0 +1,3 @@
+include ':dclmradiowatch'
+include ':app'
+rootProject.name = "DCLM Radio"

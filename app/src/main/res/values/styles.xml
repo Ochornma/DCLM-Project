@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Theme.DCLM" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--  <item name="android:popupMenuStyle">@style/PopupMenu</item>-->
+        <item name="android:actionMenuTextColor">@android:color/black</item>
+    </style>
+
+    <style name="Widget.DCLM.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/TextAppearance.DCLM.TextInputLayout.HintText</item>
+        <item name="hintTextColor">#000</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="boxStrokeColor">#000</item>
+    </style>
+
+    <style name="TextAppearance.DCLM.ALERT" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/colorAccent</item>
+    </style>
+
+    <style name="Widget.DCLM.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="backgroundTint">#AFA7A7</item>
+        <item name="android:stateListAnimator" tools:ignore="NewApi">
+            @animator/shr_next_button_state_list_anim
+        </item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.DCLM.Title" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+
+    <style name="TextAppearance.DCLM.TextInputLayout.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">#E3171515</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.RadioButtonLikeBottomNavigationView" parent="@android:style/Widget.Button">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:minHeight">54dip</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@drawable/navigation_text</item>
+    </style>
+
+</resources>

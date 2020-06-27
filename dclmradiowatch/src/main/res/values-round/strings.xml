@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DCLM Radio</string>
+    <string name="play_and_pause">play and pause</string>
+    <string name="app_describe">Your Spiritual Welfare is our Concern</string>
+    <string name="no_connection">No Connection</string>
+
+    <string name="listning">Listeners:</string>
+    <string name="no_speaker">Speaker is not supported</string>
+</resources>
